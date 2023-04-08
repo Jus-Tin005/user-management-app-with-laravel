@@ -27,7 +27,7 @@
                 </a>
                 <div class="dropdown-items mb-1 hidden">
                         @can('permission_access')
-                        <a class="nav-link{{ request()->is('admin/permissions*') ? ' active' : '' }}" href="{{ route('admin.permissions.index') }}">
+                        <a class="nav-link{{ request()->is('admin/permissions*') ? ' active' : '' }}" href="#">
                             <i class="fa-fw fas fa-unlock-alt">
 
                             </i>
