@@ -26,8 +26,8 @@
                     <i class="fa fa-caret-down ml-auto" aria-hidden="true"></i>
                 </a>
                 <div class="dropdown-items mb-1 hidden">
-                        @can('permission_access')
-                        <a class="nav-link{{ request()->is('admin/permissions*') ? ' active' : '' }}" href="#">
+                        @can('access')
+                        <a class="nav-link{{ request()->is('admin/permissions*') ? ' active' : '' }}" href="{{ route('admin.permissions.index') }}">
                             <i class="fa-fw fas fa-unlock-alt">
 
                             </i>
@@ -35,7 +35,7 @@
                             <span class="mx-4">{{ trans('cruds.permission.title') }}</span>
                         </a>
                     @endcan
-                    @can('role_access')
+                    @can('access')
                         <a class="nav-link{{ request()->is('admin/roles*') ? ' active' : '' }}" href="{{ route('admin.roles.index') }}">
                             <i class="fa-fw fas fa-briefcase">
 
@@ -44,7 +44,7 @@
                             <span class="mx-4">{{ trans('cruds.role.title') }}</span>
                         </a>
                     @endcan
-                    @can('user_access')
+                    @can('access')
                         <a class="nav-link{{ request()->is('admin/users*') ? ' active' : '' }}" href="{{ route('admin.users.index') }}">
                             <i class="fa-fw fas fa-user">
 
@@ -56,24 +56,7 @@
                 </div>
             </div>
         @endcan
-        @can('project_access')
-            <a class="nav-link{{ request()->is('admin/projects*') ? ' active' : '' }}" href="{{ route('admin.projects.index') }}">
-                <i class="fa-fw fas fa-project-diagram">
-
-                </i>
-
-                <span class="mx-4">{{ trans('cruds.project.title') }}</span>
-            </a>
-        @endcan
-        @can('folder_access')
-            <a class="nav-link{{ request()->is('admin/folders*') ? ' active' : '' }}" href="{{ route('admin.folders.index') }}">
-                <i class="fa-fw fas fa-folder">
-
-                </i>
-
-                <span class="mx-4">{{ trans('cruds.folder.title') }}</span>
-            </a>
-        @endcan
+       
         @if(file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php')))
             <a class="nav-link{{ request()->is('profile/password') ? ' active' : '' }}" href="{{ route('profile.password.edit') }}">
                 <i class="fa-fw fas fa-key">

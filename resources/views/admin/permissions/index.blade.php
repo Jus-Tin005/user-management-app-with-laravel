@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-@can('folder_create')
+@can('create')
     <div class="block my-4">
         <a class="btn-md btn-green" href="{{ route('admin.permissions.create') }}">
             {{ trans('global.add') }} {{ trans('cruds.permission.title_singular') }}
@@ -44,19 +44,19 @@
                                 {{ $permission->title ?? '' }}
                             </td>
                             <td>
-                                @can('permission_show')
+                                @can('show')
                                     <a class="btn-sm btn-indigo" href="{{ route('admin.permissions.show', $permission->id) }}">
                                         {{ trans('global.view') }}
                                     </a>
                                 @endcan
 
-                                @can('permission_edit')
+                                @can('edit')
                                     <a class="btn-sm btn-blue" href="{{ route('admin.permissions.edit', $permission->id) }}">
                                         {{ trans('global.edit') }}
                                     </a>
                                 @endcan
 
-                                @can('permission_delete')
+                                @can('delete')
                                     <form action="{{ route('admin.permissions.destroy', $permission->id) }}" method="POST" onsubmit="return confirm('{{ trans('global.areYouSure') }}');" style="display: inline-block;">
                                         <input type="hidden" name="_method" value="DELETE">
                                         <input type="hidden" name="_token" value="{{ csrf_token() }}">

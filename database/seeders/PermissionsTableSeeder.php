@@ -12,71 +12,88 @@ class PermissionsTableSeeder extends Seeder
             [
                 'id'    => 1,
                 'title' => 'user_management_access',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 2,
-                'title' => 'permission_create',
+                'title' => 'create',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 3,
-                'title' => 'permission_edit',
+                'title' => 'edit',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 4,
-                'title' => 'permission_show',
+                'title' => 'show',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 5,
-                'title' => 'permission_delete',
+                'title' => 'delete',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 6,
-                'title' => 'permission_access',
+                'title' => 'access',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 7,
-                'title' => 'role_create',
+                'title' => 'create',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 8,
-                'title' => 'role_edit',
+                'title' => 'edit',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 9,
-                'title' => 'role_show',
+                'title' => 'show',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 10,
-                'title' => 'role_delete',
+                'title' => 'delete',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 11,
-                'title' => 'role_access',
+                'title' => 'access',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 12,
-                'title' => 'user_create',
+                'title' => 'create',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 13,
-                'title' => 'user_edit',
+                'title' => 'edit',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 14,
-                'title' => 'user_show',
+                'title' => 'show',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 15,
-                'title' => 'user_delete',
+                'title' => 'delete',
+                'feature_id' => 1,
             ],
             [
                 'id'    => 16,
-                'title' => 'user_access',
+                'title' => 'access',
+                'feature_id' => 1,
             ],
 
             [
                 'id'    => 17,
                 'title' => 'profile_password_edit',
+                'feature_id' => 1,
             ],
         ];
 
