@@ -1,1 +1,2 @@
-# user-management-app-with-laravel
+Admin E-mail = khuntun984@gmail.com
+Password = khuntun984
