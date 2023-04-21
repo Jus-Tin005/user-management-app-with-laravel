@@ -20,7 +20,6 @@ class Permission extends Model
 
     protected $fillable = [
         'title',
-        'feature_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -30,4 +29,7 @@ class Permission extends Model
     {
         return $date->format('Y-m-d H:i:s');
     }
+
+    
+
 }

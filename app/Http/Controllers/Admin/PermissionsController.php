@@ -7,9 +7,11 @@ use App\Http\Requests\MassDestroyPermissionRequest;
 use App\Http\Requests\StorePermissionRequest;
 use App\Http\Requests\UpdatePermissionRequest;
 use App\Permission;
+use App\Feature;
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+
 
 class PermissionsController extends Controller
 {
@@ -18,7 +20,6 @@ class PermissionsController extends Controller
         abort_if(Gate::denies('access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $permissions = Permission::all();
-
         return view('admin.permissions.index', compact('permissions'));
     }
 

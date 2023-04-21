@@ -31,8 +31,8 @@ class Feature extends Model
         return $date->format('Y-m-d H:i:s');
     }
 
-    public function features()
+    public function permissionFeature()
     {
-        return $this->belongsToMany(Permission::class,'feature_id','id');
+        return $this->belongsToMany(Permission::class,'permission_features');
     }
 }

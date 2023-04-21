@@ -15,7 +15,7 @@
             <span class="mx-4">Dashboard</span>
         </a>
 
-        @can('user_management_access')
+        @can('access')
             <div class="nav-dropdown">
                 <a class="nav-link" href="#">
                     <i class="fa-fw fas fa-users">
@@ -27,7 +27,7 @@
                 </a>
                 <div class="dropdown-items mb-1 hidden">
                         @can('access')
-                        <a class="nav-link{{ request()->is('admin/permissions*') ? ' active' : '' }}" href="{{ route('admin.permissions.index') }}">
+                        <a class="nav-link" href="#">
                             <i class="fa-fw fas fa-unlock-alt">
 
                             </i>
