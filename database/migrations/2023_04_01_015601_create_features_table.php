@@ -14,7 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('features', function (Blueprint $table) {
+<<<<<<< HEAD
             $table->increments('id');
+=======
+            $table->id();
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5
             $table->string('name');
             $table->timestamps();
         });

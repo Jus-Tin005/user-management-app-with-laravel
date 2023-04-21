@@ -34,6 +34,7 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 
         Route::post('password', 'ChangePasswordController@update')->name('password.update');
     }
 });
+<<<<<<< HEAD
 
 
 
@@ -42,3 +43,5 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 
 
 
 
+=======
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5

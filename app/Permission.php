@@ -20,6 +20,10 @@ class Permission extends Model
 
     protected $fillable = [
         'title',
+<<<<<<< HEAD
+=======
+        'feature_id',
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5
         'created_at',
         'updated_at',
         'deleted_at',
@@ -29,7 +33,10 @@ class Permission extends Model
     {
         return $date->format('Y-m-d H:i:s');
     }
+<<<<<<< HEAD
 
     
 
+=======
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5
 }

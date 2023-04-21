@@ -7,12 +7,18 @@ use App\Http\Requests\MassDestroyPermissionRequest;
 use App\Http\Requests\StorePermissionRequest;
 use App\Http\Requests\UpdatePermissionRequest;
 use App\Permission;
+<<<<<<< HEAD
 use App\Feature;
+=======
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5
 use Gate;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5
 class PermissionsController extends Controller
 {
     public function index()
@@ -20,6 +26,10 @@ class PermissionsController extends Controller
         abort_if(Gate::denies('access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $permissions = Permission::all();
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5
         return view('admin.permissions.index', compact('permissions'));
     }
 

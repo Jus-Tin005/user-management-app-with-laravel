@@ -1,7 +1,10 @@
 $(document).ready(function () {
   window._token = $('meta[name="csrf-token"]').attr('content')
 
+<<<<<<< HEAD
  
+=======
+>>>>>>> b1c95138984331642b47d21530a00b3f3e4969c5
   moment.updateLocale('en', {
     week: {dow: 1} // Monday is the first day of the week
   })
